@@ -39,3 +39,24 @@
        * docker exec -it ```<ContainerID>``` redis-cli : Redis 프로그램 접속 (-it : 명령어 전달, redis-cli : Redis 프로그램에 접속 명령어)
 
      + 리눅스 : redis-cli
+
+-----
+### 자료 구조
+-----
+1. String, Lists, Sets, Sorted Sets, Hashes 등 자료구조 지원
+2. Redis에서 모든 Key 값은 문자열, Value는 문자 / 숫자 구분 없이 모든 데이터를 문자열 형식으로 저장
+3. 자료 구조 종류
+   - Strings
+     + 데이터를 String 형태의 value 저장
+     + 가장 일반적인 Key - Value 구조 형태
+
+   - Lists
+     + 순서가 있는 문자열 목록
+     + Deque(Double-ended Queue)와 유사한 구조
+  
+   - Sets : 중복을 허용하지 않는 문자열 집합
+   - Sorted Sets (= zSet)
+     + 점수가 할당된 문자열로 이루어진 집합
+     + score를 기준으로 정렬된 순서로 관리
+
+   - Hashes : Value 값이 Map 자료 구조로 이루어진 형태 (Key=Value(Map))
