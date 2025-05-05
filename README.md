@@ -1,2 +1,4 @@
-# Redis
-Redis
+-----
+### Redis
+-----
+1. 개발자라면 알아야 할 Redis 기본
