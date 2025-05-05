@@ -21,6 +21,15 @@
     + 따라서, 동시성 이슈를 해결하기 위해 사용 (DB 동시성 제어)
   - 윈도우 서버에서는 지원하지 않으며, Linux 서버 및 MacOS 등에서 사용 가능
 
+5. 주요 적용 사례
+   - 캐싱 (Caching)
+   - 세션 관리 (Session Management)
+   - 실시간 분석 및 통계 (Real-time Analysis)
+   - 메세지 큐 (Message Queue)
+   - 지리공간 인덱싱 (Geospatial Indexing)
+   - 속도 제한 (Rate Limiting)
+   - 실시간 채팅 및 메시징 (Real-time Chat and Messaging)
+     
 -----
 ### Redis 설치
 -----
