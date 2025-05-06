@@ -1,0 +1,16 @@
+services:
+  api-server:
+    build: .
+    ports:
+      - 8080:8080
+    depends_on:
+      cache-server:
+        condition: service_healthy # 다른 서비스가 시작되기 전에 특정 서비스가 healthy 상태가 되기를 기다리도록 설정
+  cache-server:
+    image: redis
+    ports:
+      - 6379:6379
+    healthcheck: # 서비스 상태를 주기적으로 확인해 healthy 상태로 간주할 조건 정의
+      test: [ "CMD", "redis-cli", "ping" ] # 성공시 healthy check 통과
+      interval: 5s # 5초 간격으로 healthy check
+      retries: 10 # 최대 10번까지 실패 허용, 10번 연속 실패하면 이 컨테이너는 unhealthy

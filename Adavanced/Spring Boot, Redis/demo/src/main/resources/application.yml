@@ -1,0 +1,32 @@
+# local 환경
+spring:
+  profiles:
+    default: local
+  datasource:
+    url: jdbc:mysql://host.docker.internal:3306/mydb # host.docker.internal : Docker 컨테이너 호스트(= 컨테이너를 실행한 PC 또는 서버)에 접근할 수 있도록 해주는 DNS 이름
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  data:
+    redis:
+      host: cache-server
+      port: 6379
+
+logging:
+  level:
+    org.springframework.cache: trace
+
+---
+# prod 환경
+spring:
+  config:
+    activate:
+      on-profile: prod
+  datasource:
+    url: jdbc:mysql://instagram-db.coseefawhrzc.ap-northeast-2.rds.amazonaws.com:3306/mydb
+    username: admin
+    password: 1234
