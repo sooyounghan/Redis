@@ -16,31 +16,31 @@
 
 3. 실습 예시
    - 터미널 1, 2 : SUBSCRIBE test_channel
-```
+```shell
 127.0.0.1:6379> SUBSCRIBE test_channel
 1) "subscribe"
 2) "test_channel"
 3) (integer) 1
 ```
-```
+```shell
 127.0.0.1:6379> SUBSCRIBE test_channel
 1) "subscribe"
 2) "test_channel"
 3) (integer) 2
 ```
    - 터미널 3 : PUBLISH test_channel "Hello, This is a test Message."
-```
+```shell
 127.0.0.1:6379> publish test_channel "Hello, This is a test Message."
 (integer) 2
 ```
 
   - 터미널 1, 2
-```
+```shell
 1) "message"
 2) "test_channel"
 3) "Hello, This is a test Message."
 ```
-```
+```shell
 1) "message"
 2) "test_channel"
 3) "Hello, This is a test Message."
