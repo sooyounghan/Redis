@@ -15,11 +15,14 @@
 </div>
 
    - 다음과 같은 안내문이 나왔다면, 윈도우 서버를 재부팅한 다음 Powershell을 이용해 우분투 사용 가능
+   - Ubuntu 접속 명렁어
+```bash
+$ wsl -d ubuntu-22.04
+```
    - 우분투 환경에서는 다음과 같이 repository를 추가하면 최신 버전 레디스 다운로드 가능
 ```bash
-$ curl -fsSL http://packages.redis.io/gpg | sudo gpg --dearmor -o /usr/share/keyrings/redis-archive-keyring.gpg
-$ echo "deb [signed-by=/usr/share/keyrings/redis-archive-keyring.gpg]
-https://packages.redis.io/deb $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/redis.list
+$ curl -fsSL https://packages.redis.io/gpg | sudo gpg --dearmor -o /usr/share/keyrings/redis-archive-keyring.gpg
+$ echo "deb [signed-by=/usr/share/keyrings/redis-archive-keyring.gpg] https://packages.redis.io/deb $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/redis.list
 $ sudo apt-get update
 ```
 
