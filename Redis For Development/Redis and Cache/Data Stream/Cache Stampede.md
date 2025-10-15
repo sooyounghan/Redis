@@ -50,7 +50,7 @@
 </div>
 
    - timeToCompute * beta * log(rand())는 무작위성을 가진 값 : 이 값은 항목의 만료 여부에 영향을 미침
-   - 만약, currnetTime에서 timeToCompute * beta * log((rand))을 빼서 얻은 값이 expiry봗 크다면 조건은 거짓(False)
+   - 만약, currnetTime에서 timeToCompute * beta * log((rand))을 빼서 얻은 값이 expiry보다 크다면 조건은 거짓(False)
    - 그러나, 작다면, 조건은 참(True)
    - 즉, 만료 시간이 가까워질수록 currenTime이나 expiry의 차이가 작아지며, rand() 함수가 반환한 무작위 값에 의존하므로 조건이 참이 될 확률이 높아짐
    - 이는 만료 시간이 점점 다가올 때 더 자주 만료된 캐시 항목을 확인하게 되는 것 의미
