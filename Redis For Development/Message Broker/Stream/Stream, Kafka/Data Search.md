@@ -25,7 +25,7 @@ XREAD [COUNT count] [BLOCK milliseconds] STREAMS key [key ...] ID [ID ...]
 ```
    - BLOCK 0은 더 이상 stream에서 가져올 데이터가 없더라도 연결을 끊지 않고 계속 stream을 리스닝하라는 의미
    - BLOCK 1000을 입력한다면, 들어오는 데이터가 없더라도 1000ms, 즉 최대 1초 동안 연결을 유지하며 대기하라는 의미
-   - STREAMS Email 0이라는 커맨드는 Email이라는 stream에 저장된 데이터 중 ID가 0보다 큰 값을 읽어로난 의미 : 즉, stream에 처음부터 저장된 모든 데이터를 읽어오라는 것
+   - STREAMS Email 0이라는 커맨드는 Email이라는 stream에 저장된 데이터 중 ID가 0보다 큰 값을 읽어오라는 의미 : 즉, stream에 처음부터 저장된 모든 데이터를 읽어오라는 것
    - 앞선 예제에서 Email이라는 stream에 몇 개의 데이터를 저장했으므로, 위 커맨드를 실행하면 다음과 같은 데이터를 반환한 뒤 대기하며, 만약 stream에 새로운 데이터가 저장되면 그 데이터를 반환
 ```redis
 > XREAD BLOCK 0 STREAMS Email 0
