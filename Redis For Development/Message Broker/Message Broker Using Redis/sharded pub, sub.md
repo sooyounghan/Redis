@@ -3,7 +3,7 @@
 -----
 1. 클러스터의 pub / sub 비효율을 해결하기 위해 레디스 7.0에서는 sharded pub / sub 기능 도입
 2. sharded pub / sub 환경에서 각 채널은 슬롯에 매핑
-   - 클러스터에서 키가 슬롯에 할당하는 것과 동일한 방식으로 채널이 할당되며, 같은 슬롯을 가지고 있는 노드 간에만 pub / sub 멤세지 전파
+   - 클러스터에서 키가 슬롯에 할당하는 것과 동일한 방식으로 채널이 할당되며, 같은 슬롯을 가지고 있는 노드 간에만 pub / sub 메세지 전파
 <div align="center">
 <img src="https://github.com/user-attachments/assets/b0aec9c0-8ecb-443b-b22b-7ae6c9601edb">
 </div>
