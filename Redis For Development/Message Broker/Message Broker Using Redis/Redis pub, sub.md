@@ -49,7 +49,7 @@ Reading messages... (press Ctrl-C to quit or any key to type command)
 3) (integer) 1
 Reading messages... (press Ctrl-C to quit or any key to type command)
 ```
-   - PSUBSCRIBE mail-*라는 커맨드를 상요하면 mail-track, mail-album 등 앞 부분이 mail로 시작하는 모든 채널에 전파된 메세지를 모든 수신 가능
+   - PSUBSCRIBE mail-*라는 커맨드를 사용하면 mail-track, mail-album 등 앞 부분이 mail로 시작하는 모든 채널에 전파된 메세지를 모든 수신 가능
    - SUBSCRIBE와 마찬가지로 동시에 여러 문자열을 구독하는 것도 가능
    - 이 때, 메세지는 message가 아닌 pmessage 타입으로 전달되며, SUBSCRIBE 커맨드를 이용해 메세지를 구독하는 방식과 구분
 <div align="center">
