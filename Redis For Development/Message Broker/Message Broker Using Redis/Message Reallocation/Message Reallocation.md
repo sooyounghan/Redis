@@ -18,4 +18,4 @@ EmailService 2: XCLAIM Email EmailServiceGroup EmailService3 3600000
 16265569498055-0
 ```
   - 2개의 소비자가 모두 보류 중인 메세지에 XCLAIM 커맨드를 실행했지만, 위의 예제처럼 EmailService1의 커맨드가 먼저 실행되면 보류 시간이 즉시 0으로 재설정
-  - EmailServicd2에서 실행한 XCLAIM 커맨드에서의 최소 대깃 ㅣ간보다 메세지 보류 시간이 짧으므로, 이 커맨드는 무시되며, 이를 통해 중복 메세지 할당 방지 가능
+  - EmailServicd2에서 실행한 XCLAIM 커맨드에서의 최소 대기 시간보다 메세지 보류 시간이 짧으므로, 이 커맨드는 무시되며, 이를 통해 중복 메세지 할당 방지 가능
