@@ -1,7 +1,7 @@
 -----
 ### stream 상태 확인
 -----
-1. XINFO 커맨드를 이용해 stream의 여러 상태를 확인할 수 있으며, 이 때 사용할 수 있는 기능은 아래 help 커맨드로 확인 가능
+1. XINFO 커맨드를 이용해 stream의 여러 상태를 확인할 수 있으며, 이 때 사용할 수 있는 기능은 아래 HELP 커맨드로 확인 가능
 ```redis
 > XINFO HELP
 1) XINFO <subcommand> [<arg> [value] [opt] ...]. Subcommands are:
@@ -17,7 +17,7 @@
 
 2. 다음과 같은 커맨드를 이용해 특정 소비자 그룹에 속한 소비자 정보를 알 수 있음
 ```redis
-XINFO cosumer <stream key> <소비자 그룹 이름>
+XINFO cosumers <stream key> <소비자 그룹 이름>
 ```
 ```redis
 > XINFO consumers Email EmailServiceGroup
