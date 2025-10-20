@@ -8,7 +8,7 @@
 SENTINER MONITOR <master-name> <ip> <port> <quorum>
 ```
    - SENTINEL REMOVE 커맨드 : 더 이상 지정하지 마스터를 모니터링 하지 않도록 지시
-     + 센티널의 내부 상태에서 완전히 제거되며, SENTINEL masters 등의 컴내드에서 나열되지 않음
+     + 센티널의 내부 상태에서 완전히 제거되며, SENTINEL masters 등의 커맨드에서 나열되지 않음
 ```redis
 SENTINEL REMOVE <master-name>
 ```
