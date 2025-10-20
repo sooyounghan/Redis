@@ -7,7 +7,7 @@
 <img src="https://github.com/user-attachments/assets/57362a7b-27ff-4a33-8c26-c12475c235a6">
 </div>
 
-   - 복제본 노드에 직접 접속한 뒤, REFLICA OF NO ONE 커맨드를 입력해 읽기 전용 상태 헺
+   - 복제본 노드에 직접 접속한 뒤, REFLICA OF NO ONE 커맨드를 입력해 읽기 전용 상태 해제
    - 애플리케이션 코드에서 레디스 엔드포인트를 복제본의 IP로 변경
    - 배포
 
