@@ -11,7 +11,7 @@
 </div>
 
    - 레디스가 실행되는 서버 eth0 ~ 3, localhost까지 총 5개의 네트워크 인터페이스를 가지고 있음
-   - 이 때, eht1, localhost 인터페이스를 사용해 들어오는 연결마 허용하기 위해 bind 설정에 해당하는 인터페이스 IP 주소만을 지정 가능
+   - 이 때, eht1, localhost 인터페이스를 사용해 들어오는 연결만 허용하기 위해 bind 설정에 해당하는 인터페이스 IP 주소만을 지정 가능
 <div align="center">
 <img src="https://github.com/user-attachments/assets/d6753bee-ba35-4cca-ae56-c47b6e9cf544">
 </div>
