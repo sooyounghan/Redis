@@ -17,7 +17,7 @@
    - O(N) + O(M * log(M))의 시간 복잡도를 가짐
      + N은 모든 집합의 총 아이템 수
      + M은 결과 집합의 아이템 수
-   - ZUNION 커맨드는 합집합 연산의 결과를 반환, ZUNION STORE는 합집합 결과를 다른 집합에 저장
+   - ZUNION 커맨드는 합집합 연산의 결과를 반환, ZUNIONSTORE는 합집합 결과를 다른 집합에 저장
      
 6. ZINTER / ZINTERSTORE / ZINTERCARD
    - 교집합을 수행하는 커맨드
